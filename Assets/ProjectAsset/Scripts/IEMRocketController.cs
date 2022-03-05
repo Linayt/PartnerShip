@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RocketController : MonoBehaviour
+public class IEMRocketController : MonoBehaviour
 {
     public float movementSpeed = 250.0f;
     public float rotationSpeed = 0.5f;
@@ -46,7 +46,7 @@ public class RocketController : MonoBehaviour
         {
             // TODO with player ship
             // PlayerShip target = collision.gameObject.GetComponent<PlayerShip>();
-            // target.Damage(damageValue);
+            // target.DamageShield(damageValue);
         }
         finally
         {

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class EnemyTurretController : MonoBehaviour
 {
@@ -10,8 +11,8 @@ public class EnemyTurretController : MonoBehaviour
     public float maxPlayerDistance = 100.0f;
     public int targetMask = 0;
     public Transform canonPosition;
-    // public VisualEffect canonVisualEffect;
-    // public VisualEffect destructionVisualEffect;
+    public VisualEffect canonVisualEffect;
+    public VisualEffect destructionVisualEffect;
     public GameObject projectile;
 
     private GameObject target;
@@ -56,13 +57,13 @@ public class EnemyTurretController : MonoBehaviour
         lastShotTime = Time.time;
         GameObject newProjectile = Instantiate(projectile, canonPosition.position, canonPosition.rotation);
         // TODO SFX
-        // canonVisualEffect.Play();
+        canonVisualEffect.Play();
     }
 
     void Explode()
     {
         // TODO SFX
-        // destructionVisualEffect.Play();
+        destructionVisualEffect.Play();
     }
 
     public void Damage(float damage)
@@ -71,6 +72,7 @@ public class EnemyTurretController : MonoBehaviour
             return;
 
         hitPoints -= damage;
+        Debug.Log("Tourelle enemie touchée");
         if (hitPoints <= 0)
         {
             Explode();

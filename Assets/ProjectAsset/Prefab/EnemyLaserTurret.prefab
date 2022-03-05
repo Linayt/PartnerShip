@@ -327,6 +327,8 @@ MonoBehaviour:
   maxPlayerDistance: 100
   targetMask: 6
   canonPosition: {fileID: 1980147546821794522}
+  canonVisualEffect: {fileID: 6134684297151598939}
+  destructionVisualEffect: {fileID: 3633624232759930821}
   projectile: {fileID: 6622456158437030755, guid: df8f33b8d75a9e94ebe2053967845276,
     type: 3}
 --- !u!1 &1980147546821794525
