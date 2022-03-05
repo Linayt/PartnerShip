@@ -155,6 +155,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Laser Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6085010974297403690, guid: 3c01123e65c8c3440af29fa7bf50b569,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6085010974297403689, guid: 3c01123e65c8c3440af29fa7bf50b569, type: 3}
     - {fileID: 6085010974297403688, guid: 3c01123e65c8c3440af29fa7bf50b569, type: 3}

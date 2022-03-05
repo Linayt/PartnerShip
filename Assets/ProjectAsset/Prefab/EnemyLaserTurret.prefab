@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4147952222978846271}
   - component: {fileID: 7862019491308073830}
   - component: {fileID: 3374288557981737379}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 1980147546045612189}
   - component: {fileID: 1980147546045612188}
   - component: {fileID: 1980147546045612184}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EnemyLaserTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +216,7 @@ MonoBehaviour:
   maxPlayerDistance: 100
   targetMask: 6
   canonPosition: {fileID: 1980147546821794522}
-  projectile: {fileID: 6085010974297403690, guid: 3c01123e65c8c3440af29fa7bf50b569,
+  projectile: {fileID: 6622456158437030755, guid: df8f33b8d75a9e94ebe2053967845276,
     type: 3}
 --- !u!1 &1980147546821794525
 GameObject:
@@ -227,7 +227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1980147546821794522}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
