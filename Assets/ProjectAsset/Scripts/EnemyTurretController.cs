@@ -10,22 +10,27 @@ public class EnemyTurretController : MonoBehaviour
     public float maxPlayerDistance = 100.0f;
     public int targetMask = 0;
     public Transform canonPosition;
+    // public VisualEffect canonVisualEffect;
+    // public VisualEffect destructionVisualEffect;
     public GameObject projectile;
 
     private GameObject target;
-    private MeshCollider targetCollider;
     private bool isInCooldown = false;
     private float lastShotTime = 0f;
+    private float hitPoints = 100.0f;
+    private bool isDestroyed = false;
 
     void Start()
     {
         // Lock player as target
         target = GameObject.FindGameObjectWithTag("Player");
-        targetCollider = target.GetComponentInChildren<MeshCollider>();
     }
 
     void Update()
     {
+        if (isDestroyed)
+            return;
+
         if (target != null && target.activeSelf && Vector3.Distance(target.transform.position, transform.position) < maxPlayerDistance)
         {
             // rotation
@@ -39,7 +44,8 @@ public class EnemyTurretController : MonoBehaviour
             return;
 
         RaycastHit hit;
-        if (Physics.SphereCast(transform.position, sphereCastWidth, transform.TransformDirection(Vector3.forward), out hit, maxPlayerDistance, 1 << targetMask)){
+        if (Physics.SphereCast(transform.position, sphereCastWidth, transform.TransformDirection(Vector3.forward), out hit, maxPlayerDistance, 1 << targetMask))
+        {
             Shoot();
         }
         Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * maxPlayerDistance, Color.yellow);
@@ -50,6 +56,25 @@ public class EnemyTurretController : MonoBehaviour
         lastShotTime = Time.time;
         GameObject newProjectile = Instantiate(projectile, canonPosition.position, canonPosition.rotation);
         // TODO SFX
-        // TODO VFX
+        // canonVisualEffect.Play();
+    }
+
+    void Explode()
+    {
+        // TODO SFX
+        // destructionVisualEffect.Play();
+    }
+
+    public void Damage(float damage)
+    {
+        if (isDestroyed)
+            return;
+
+        hitPoints -= damage;
+        if (hitPoints <= 0)
+        {
+            Explode();
+            isDestroyed = true;
+        }
     }
 }

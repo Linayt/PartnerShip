@@ -26,10 +26,15 @@ public class LaserController : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    void Explode()
     {
         // TODO add vfx
         // TODO add sfx
         Destroy(gameObject);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        Explode();
     }
 }
