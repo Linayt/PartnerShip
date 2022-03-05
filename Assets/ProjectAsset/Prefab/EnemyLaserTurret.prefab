@@ -214,7 +214,7 @@ MonoBehaviour:
   cooldown: 2
   sphereCastWidth: 1
   maxPlayerDistance: 100
-  targetMask: 0
+  targetMask: 6
   canonPosition: {fileID: 1980147546821794522}
   projectile: {fileID: 6085010974297403690, guid: 3c01123e65c8c3440af29fa7bf50b569,
     type: 3}
