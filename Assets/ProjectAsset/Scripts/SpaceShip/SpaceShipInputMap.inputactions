@@ -1,0 +1,162 @@
+{
+    "name": "SpaceShipInputMap",
+    "maps": [
+        {
+            "name": "ShipMovement",
+            "id": "9729eb42-82ab-4b9c-9e04-ceb3f9a70788",
+            "actions": [
+                {
+                    "name": "Thruster",
+                    "type": "Value",
+                    "id": "4aca63be-87db-48be-8e6d-a501182bdd78",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Hover",
+                    "type": "Value",
+                    "id": "95bbc35a-12d4-42f7-afc7-611834ccb75d",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Roll",
+                    "type": "Value",
+                    "id": "0c90d6e9-b899-4078-b5e4-7f61ed3693ff",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "1D Axis",
+                    "id": "9dfb2d18-2350-4f68-9c11-f924464683b8",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Thruster",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "8e97625e-17de-4c62-91ea-817102f73e0a",
+                    "path": "<Mouse>/forwardButton",
+                    "interactions": "",
+                    "processors": "Clamp(max=1)",
+                    "groups": "",
+                    "action": "Thruster",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "fadcd0b4-e52b-4e85-ab5c-b156b7bbd5e1",
+                    "path": "<Mouse>/backButton",
+                    "interactions": "",
+                    "processors": "Clamp(min=-1)",
+                    "groups": "",
+                    "action": "Thruster",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "71aadc41-201a-4334-96db-9bee282fc9f3",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "64423d0d-76f0-4784-b217-42b73d60ca15",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "Clamp(min=-1)",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "ede2a9b8-c60b-42a9-a5e4-97dd7776cbc4",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "Clamp(max=1)",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "24181cb5-0faf-4ea9-bab2-96c234446305",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Hover",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "cd994b9b-37ab-4737-a47c-2a2420985ab8",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Hover",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "cf6b378a-af3d-4613-b65e-184968f86f59",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Hover",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "92a0a9e6-1fab-4e2c-b899-854cf94bda77",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Hover",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "d5053376-ba20-43e0-bcdb-8f68a25601f8",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Hover",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

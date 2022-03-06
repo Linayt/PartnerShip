@@ -6,7 +6,7 @@ public class VRCockpitCanon : MonoBehaviour
 {
     [Header("Spawn")]
     [SerializeField] GameObject projectile;
-    [SerializeField] Transform spawnPoint;
+    [SerializeField] List<Transform> spawnPoints;
     
 
     [Header("Timming")]
@@ -36,7 +36,10 @@ public class VRCockpitCanon : MonoBehaviour
     {
         if (CanFire())
         {
-            Instantiate(projectile, spawnPoint.position, spawnPoint.rotation);
+            foreach (var spawnPoint in spawnPoints)
+            {
+                Instantiate(projectile, spawnPoint.position, spawnPoint.rotation);
+            }
             cooldown = 0;
         }
     }
