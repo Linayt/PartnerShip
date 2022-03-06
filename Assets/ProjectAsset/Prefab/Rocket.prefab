@@ -244,4 +244,5 @@ MonoBehaviour:
   damageValue: 10
   temporaryVFX: {fileID: 8707230738319411768, guid: 941d26278cf5e91479edc4435e88ffef,
     type: 3}
-  explosionVFXAsset: {fileID: 0}
+  explosionVFXAsset: {fileID: 8926484042661614526, guid: 25482a96b9549444e84b8481f3199fd1,
+    type: 3}

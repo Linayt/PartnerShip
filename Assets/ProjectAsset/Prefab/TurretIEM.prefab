@@ -78,5 +78,25 @@ PrefabInstance:
       propertyPath: maxPlayerDistance
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 6052125205601557024, guid: 5f273c084d1c58a4f95ee347b4b9c420,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052125205601557024, guid: 5f273c084d1c58a4f95ee347b4b9c420,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052125205601557024, guid: 5f273c084d1c58a4f95ee347b4b9c420,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[0].m_Value.y
+      value: 0.26845244
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052125205601557024, guid: 5f273c084d1c58a4f95ee347b4b9c420,
+        type: 3}
+      propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[0].m_Value.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f273c084d1c58a4f95ee347b4b9c420, type: 3}
