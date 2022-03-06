@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a99bad93f788546b5962fd4c95c620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 200
+  movementSpeed: 10
   lifetime: 10
   damageValue: 10
   temporaryVFX: {fileID: 8707230738319411768, guid: 941d26278cf5e91479edc4435e88ffef,
