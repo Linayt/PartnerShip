@@ -10,24 +10,36 @@ public class SpaceShipLife : MonoBehaviour
 
     [SerializeField] string sceneToLoadonDeath;
 
+    [SerializeField] MeshRenderer lifeBarMeshRenderer;
+
     float life;
 
+    Material matLifeBar;
 
     SpaceShipControler sControler;
     public void Initialize()
     {
         sControler = GetComponent<SpaceShipControler>();
         life = startLife;
+        matLifeBar = lifeBarMeshRenderer.material;
+        SetLifeBarValue();
     }
 
     public void TakeDamage(float damage)
     {
         life += damage;
+        SetLifeBarValue();
         if (life <= 0) Death();
     }
 
     public void Death()
     {
         if (sceneToLoadonDeath != "") SceneManager.LoadScene(sceneToLoadonDeath);
+    }
+
+
+    public void SetLifeBarValue()
+    {
+        matLifeBar.SetFloat("_HP", life / maxLife);
     }
 }

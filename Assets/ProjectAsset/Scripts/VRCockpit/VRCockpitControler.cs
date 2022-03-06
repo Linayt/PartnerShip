@@ -26,6 +26,7 @@ public class VRCockpitControler : MonoBehaviour
     {
         vrMover.RotationCockpit();
         vrCanon.ChangeCooldownValue();
+        vrCanon.SpawnProjectile();
     }
 
 }

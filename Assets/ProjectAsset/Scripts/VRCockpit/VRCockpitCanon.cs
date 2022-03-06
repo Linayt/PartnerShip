@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using FMODUnity;
 
 public class VRCockpitCanon : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class VRCockpitCanon : MonoBehaviour
     [Header("Timming")]
     [SerializeField] float cooldownBetweenFire;
 
+    [Header("Fmod")]
+    [SerializeField] EventReference sonTirEvent;
 
     bool canFire;
     float cooldown;
@@ -45,8 +48,10 @@ public class VRCockpitCanon : MonoBehaviour
             foreach (var spawnPoint in spawnPoints)
             {
                 Instantiate(projectile, spawnPoint.position, spawnPoint.rotation);
+                RuntimeManager.PlayOneShot(sonTirEvent, spawnPoint.position);
             }
             cooldown = 0;
+            
         }
     }
 

@@ -489,7 +489,7 @@ MonoBehaviour:
   rotationSpeed: 2
   cooldown: 2
   sphereCastWidth: 4
-  maxPlayerDistance: 100
+  maxPlayerDistance: 200
   targetMask: 6
   canonPosition: {fileID: 8330265803473466647}
   canonVisualEffect: {fileID: 6052125205601557024}
