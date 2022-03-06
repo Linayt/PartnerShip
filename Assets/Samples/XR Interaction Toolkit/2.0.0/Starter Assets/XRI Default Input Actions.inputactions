@@ -1099,7 +1099,18 @@
                     "path": "<XRController>{RightHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Continuous Move",
+                    "groups": "Noncontinuous Move",
+                    "action": "Fireinput",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "82523130-7539-41ed-9a73-e6b6d9a41a31",
+                    "path": "<XRSimulatedController>{RightHand}/triggerButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Fireinput",
                     "isComposite": false,
                     "isPartOfComposite": false
