@@ -143,5 +143,40 @@ PrefabInstance:
       propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[0].m_Value.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7463500290104094038, guid: 5f273c084d1c58a4f95ee347b4b9c420,
+        type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Missile_Shot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7463500290104094038, guid: 5f273c084d1c58a4f95ee347b4b9c420,
+        type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7463500290104094038, guid: 5f273c084d1c58a4f95ee347b4b9c420,
+        type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7463500290104094038, guid: 5f273c084d1c58a4f95ee347b4b9c420,
+        type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -1782960720
+      objectReference: {fileID: 0}
+    - target: {fileID: 7463500290104094038, guid: 5f273c084d1c58a4f95ee347b4b9c420,
+        type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1168221857
+      objectReference: {fileID: 0}
+    - target: {fileID: 7463500290104094038, guid: 5f273c084d1c58a4f95ee347b4b9c420,
+        type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -1116599401
+      objectReference: {fileID: 0}
+    - target: {fileID: 7463500290104094038, guid: 5f273c084d1c58a4f95ee347b4b9c420,
+        type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -1634490218
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f273c084d1c58a4f95ee347b4b9c420, type: 3}
