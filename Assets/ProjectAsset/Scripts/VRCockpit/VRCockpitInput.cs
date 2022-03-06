@@ -33,7 +33,7 @@ public class VRCockpitInput : MonoBehaviour
 
     public void InputFireCockpit(InputAction.CallbackContext context)
     {
-        //vrControler.vrCanon.SpawnProjectile();
+        vrControler.vrCanon.SpawnProjectile();
     }
 
 }
