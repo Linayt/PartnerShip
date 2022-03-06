@@ -6,6 +6,7 @@ public class AlwaysFace : MonoBehaviour
 {
     GameObject radarCamera;
     SpriteRenderer spriteRenderer;
+    SpaceShipControler spaceShipControler;
     GameObject player;
     float yDistance;
 
@@ -17,7 +18,8 @@ public class AlwaysFace : MonoBehaviour
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         radarCamera = GameObject.Find("Radar Camera");
-        player = GameObject.Find("Player");
+        spaceShipControler = FindObjectOfType<SpaceShipControler>();
+        player = spaceShipControler.gameObject;
     }
 
 
