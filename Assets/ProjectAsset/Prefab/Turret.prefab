@@ -330,6 +330,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4052596941133062344}
     m_Modifications:
+    - target: {fileID: -9044224270389182402, guid: 755846ff7205ae348ae353dfbd09c56f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cd46f858756a8244b8eb128c9c3a9577, type: 2}
     - target: {fileID: -8745056237785181266, guid: 755846ff7205ae348ae353dfbd09c56f,
         type: 3}
       propertyPath: m_Layer
@@ -390,6 +395,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 755846ff7205ae348ae353dfbd09c56f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cd46f858756a8244b8eb128c9c3a9577, type: 2}
+    - target: {fileID: -4967559372178356347, guid: 755846ff7205ae348ae353dfbd09c56f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cd46f858756a8244b8eb128c9c3a9577, type: 2}
+    - target: {fileID: -2815264336095468682, guid: 755846ff7205ae348ae353dfbd09c56f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cd46f858756a8244b8eb128c9c3a9577, type: 2}
     - target: {fileID: -2725758968331097987, guid: 755846ff7205ae348ae353dfbd09c56f,
         type: 3}
       propertyPath: m_Layer
@@ -405,6 +425,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1850480159167901237, guid: 755846ff7205ae348ae353dfbd09c56f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cd46f858756a8244b8eb128c9c3a9577, type: 2}
     - target: {fileID: 3874153507487767507, guid: 755846ff7205ae348ae353dfbd09c56f,
         type: 3}
       propertyPath: m_Layer
