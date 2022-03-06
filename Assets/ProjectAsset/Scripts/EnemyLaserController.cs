@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
+using FMODUnity;
 
 public class EnemyLaserController : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class EnemyLaserController : MonoBehaviour
     public float damageValue = 10.0f;
     public TemporaryVFXController temporaryVFX;
     public VisualEffectAsset explosionVFXAsset;
+    public EventReference explosionSoundEffect;
 
     void Start()
     {
@@ -32,7 +34,7 @@ public class EnemyLaserController : MonoBehaviour
 
     void Explode()
     {
-        // TODO add sfx
+        RuntimeManager.PlayOneShot(explosionSoundEffect, transform.position);
         var newTemporaryVFX = GameObject.Instantiate(temporaryVFX, transform.position, transform.rotation);
         var newVisualEffect = newTemporaryVFX.GetComponent<VisualEffect>();
         newVisualEffect.visualEffectAsset = explosionVFXAsset;

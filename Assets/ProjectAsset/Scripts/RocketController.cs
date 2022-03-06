@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
+using FMODUnity;
 
 public class RocketController : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class RocketController : MonoBehaviour
     public float damageValue = 10.0f;
     public TemporaryVFXController temporaryVFX;
     public VisualEffectAsset explosionVFXAsset;
+    public EventReference explosionSoundEffect;
 
     private GameObject target;
     private Vector3 velocity;
@@ -38,7 +40,7 @@ public class RocketController : MonoBehaviour
 
     void Explode()
     {
-        // TODO add sfx
+        RuntimeManager.PlayOneShot(explosionSoundEffect, transform.position);
         var newTemporaryVFX = GameObject.Instantiate(temporaryVFX, transform.position, transform.rotation);
         var newVisualEffect = newTemporaryVFX.GetComponent<VisualEffect>();
         newVisualEffect.visualEffectAsset = explosionVFXAsset;

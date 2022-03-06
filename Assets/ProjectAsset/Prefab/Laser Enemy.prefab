@@ -199,6 +199,13 @@ MonoBehaviour:
   temporaryVFX: {fileID: 8707230738319411768, guid: 941d26278cf5e91479edc4435e88ffef,
     type: 3}
   explosionVFXAsset: {fileID: 0}
+  explosionSoundEffect:
+    Guid:
+      Data1: -1027598348
+      Data2: 1318550557
+      Data3: 1463378842
+      Data4: -604365293
+    Path: event:/Explosion
 --- !u!4 &6622456158437030767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6085010974297403686, guid: 3c01123e65c8c3440af29fa7bf50b569,

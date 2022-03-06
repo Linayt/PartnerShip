@@ -136,6 +136,13 @@ MonoBehaviour:
     type: 3}
   explosionVFXAsset: {fileID: 8926484042661614526, guid: b79c859606a51264ab72e10c284af781,
     type: 3}
+  explosionSoundEffect:
+    Guid:
+      Data1: -1027598348
+      Data2: 1318550557
+      Data3: 1463378842
+      Data4: -604365293
+    Path: event:/Explosion
 --- !u!1 &7185538477616823622
 GameObject:
   m_ObjectHideFlags: 0
