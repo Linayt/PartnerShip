@@ -52,9 +52,8 @@ public class IEMRocketController : MonoBehaviour
     {
         try
         {
-            // TODO with player ship
-            // PlayerShip target = collision.gameObject.GetComponent<PlayerShip>();
-            // target.DamageShield(damageValue);
+            SpaceShipControler target = collision.gameObject.GetComponent<SpaceShipControler>();
+            target.sLife.TakeDamage(damageValue);
         }
         finally
         {

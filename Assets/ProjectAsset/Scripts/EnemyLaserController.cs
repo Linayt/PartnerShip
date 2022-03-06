@@ -46,9 +46,8 @@ public class EnemyLaserController : MonoBehaviour
     {
         try
         {
-            // TODO with player ship
-            // PlayerShip target = collision.gameObject.GetComponent<PlayerShip>();
-            // target.Damage(damageValue);
+            SpaceShipControler target = collision.gameObject.GetComponent<SpaceShipControler>();
+            target.sLife.TakeDamage(damageValue);
         }
         finally
         {
