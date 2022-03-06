@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
+using FMODUnity;
 
 public class EnemyTurretController : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class EnemyTurretController : MonoBehaviour
     public Transform canonPosition;
     public VisualEffect canonVisualEffect;
     public VisualEffect destructionVisualEffect;
+    public EventReference destructionSoundEffect;
     public GameObject projectile;
 
     private GameObject target;
@@ -49,7 +51,7 @@ public class EnemyTurretController : MonoBehaviour
         {
             Shoot();
         }
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.back) * maxPlayerDistance, Color.yellow);
+        UnityEngine.Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.back) * maxPlayerDistance, Color.yellow);
     }
 
     void Shoot()
@@ -60,13 +62,13 @@ public class EnemyTurretController : MonoBehaviour
         projectileRotation.y *= -1;
         GameObject newProjectile = Instantiate(projectile, canonPosition.position, Quaternion.LookRotation(-transform.forward, Vector3.up));
 
-        // TODO SFX
+        RuntimeManager.PlayOneShot(destructionSoundEffect, canonPosition.transform.position);
         canonVisualEffect.Play();
     }
 
     void Explode()
     {
-        // TODO SFX
+        RuntimeManager.PlayOneShot("event:/Explosion", transform.position);
         destructionVisualEffect.Play();
     }
 
@@ -76,7 +78,6 @@ public class EnemyTurretController : MonoBehaviour
             return;
 
         hitPoints -= damage;
-        Debug.Log("Tourelle enemie touchée");
         if (hitPoints <= 0)
         {
             Explode();

@@ -125,6 +125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4052596941133062344}
+  - component: {fileID: 7463500290104094038}
   m_Layer: 7
   m_Name: Turret
   m_TagString: Untagged
@@ -150,6 +151,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7463500290104094038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4052596941133062351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 644396824
+      Data2: 1107751059
+      Data3: -2005519219
+      Data4: -1026749504
+    Path: event:/Laser_Shot_Enemy
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &4864456197848509675
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +469,13 @@ MonoBehaviour:
   canonPosition: {fileID: 8330265803473466647}
   canonVisualEffect: {fileID: 6052125205601557024}
   destructionVisualEffect: {fileID: 2730628156571521131}
+  destructionSoundEffect:
+    Guid:
+      Data1: 644396824
+      Data2: 1107751059
+      Data3: -2005519219
+      Data4: -1026749504
+    Path: event:/Laser_Shot_Enemy
   projectile: {fileID: 6622456158437030755, guid: df8f33b8d75a9e94ebe2053967845276,
     type: 3}
 --- !u!4 &7349176041097626018 stripped
