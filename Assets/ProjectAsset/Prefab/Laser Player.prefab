@@ -192,6 +192,7 @@ MonoBehaviour:
   movementSpeed: 200
   lifetime: 10
   damageValue: 10
-  temporaryVFX: {fileID: 8707230738319411768, guid: 941d26278cf5e91479edc4435e88ffef,
+  temporaryVFX: {fileID: 3266852690527469608, guid: a215bca41ef39664b86efd3108bd1956,
     type: 3}
-  explosionVFXAsset: {fileID: 0}
+  explosionVFXAsset: {fileID: 8926484042661614526, guid: 066b3f101ad04bc4ba1faca1425134e1,
+    type: 3}
